@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 2020_04_28_172027) do
     t.integer "happiness_level"
     t.integer "sadness_level"
     t.integer "anger_level"
+    t.string "date"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -5,6 +5,7 @@ class CreateFeelings < ActiveRecord::Migration[6.0]
       t.integer :happines_level
       t.integer :sadness_level
       t.integer :anger_level
+      t.string :date
 
       t.timestamps
     end

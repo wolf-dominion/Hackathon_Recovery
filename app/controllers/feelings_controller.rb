@@ -11,13 +11,14 @@ class FeelingsController < ApplicationController
     end
 
     def create
-        @feeling = Feeling.create(
-            happiness_level: params[:happiness_level],
-            sadness_level: params[:sadness_level],
-            anger_level: params[:anger_level]
-        )
+        @feeling = Feeling.create(strong_params)
 
         render json: @feeling
     end
 
+    private
+
+        def strong_params
+            params.require(:feeling).permit(:date, :happiness_level, :sadness_level, :anger_level)
+        end
 end
