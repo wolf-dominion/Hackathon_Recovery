@@ -10,10 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_28_164014) do
+ActiveRecord::Schema.define(version: 2020_04_28_172027) do
 
   create_table "feelings", force: :cascade do |t|
-    t.integer "happines_level"
+    t.integer "happiness_level"
     t.integer "sadness_level"
     t.integer "anger_level"
     t.datetime "created_at", precision: 6, null: false
